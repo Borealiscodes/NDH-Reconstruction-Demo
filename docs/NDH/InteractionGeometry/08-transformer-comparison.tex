@@ -1,0 +1,40 @@
+\section{Transformer Comparison}
+\label{sec:transformer-comparison}
+
+Traditional transformer systems
+rely on memoryless self-attention:
+\[
+\text{Attention}(Q,K,V) = 
+\text{softmax}\left(
+\frac{QK^T}{\sqrt{d_k}}
+\right)V
+\]
+This operational matrix assumes
+a flat Euclidean embedding space
+where individual token vectors
+undergo linear projections.
+
+Because the softmax normalization
+lacks path-dependent memory,
+these models exhibit high
+susceptibility to semantic mimicry
+and context drift. The model
+completes token patterns without
+tracking geometric deformation.
+
+In contrast, the NDH operator spine
+replaces linear attention weights
+with continuous, path-ordered
+holonomy transport steps:
+\[
+\mathbf{z}_{\text{return}} 
+= \mathcal{P} \exp\left(
+\oint_{\gamma} \Gamma^\mu_{\nu\lambda} 
+\, dx^\lambda \right) \mathbf{z}_0
+\]
+By routing dynamic text state
+updates along non-Euclidean curves
+bound by the 9D radial Laplacian,
+the NDH architecture prevents
+the metric collapse anomalies
+inherent in commercial scaling.
