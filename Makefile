@@ -1,6 +1,7 @@
 # =============================================================================
 # NDH-Reconstruction-Demo Master Orchestration Substrate
 # Enforces branchless environmental checking, testing, and formal triggers.
+# Integrates Phase 1 Core and Phase 2 Interaction Geometry testing arrays.
 # =============================================================================
 
 .PHONY: all env test verify format clean
@@ -16,8 +17,8 @@ format:
 	black --check --line-length=100 src/ tests/
 
 test:
-	@echo "🧮 [STAGE 3] Executing continuous array invariant test suite..."
-	pytest -v tests/
+	@echo "🧮 [STAGE 3] Executing comprehensive numerical invariant test suite..."
+	pytest -v tests/test_geometry.py tests/test_interaction.py
 
 verify:
 	@echo "🛡️  [STAGE 4] Triggering deterministic enclave verification gates..."
