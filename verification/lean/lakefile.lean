@@ -1,13 +1,12 @@
 import Lake
-open Lake Target
+open Lake RCurl
 
-package «ndh_invariants» where
+package «ndh_verification» where
   -- Add package configuration options here
 
-lean_lib «NdhInvariants» where
-  -- Add library configuration options here
-
 @[default_target]
-lean_exe «ndh_verify» where
-  root := `Main
-  supportInterpreter := true
+lean_lib «NdhVerification» where
+  srcDir := "src"
+
+require mathlib from git
+  "https://github.com"
