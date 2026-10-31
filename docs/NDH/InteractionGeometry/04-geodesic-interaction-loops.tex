@@ -1,39 +1,39 @@
 \section{Geodesic Interaction Loops}
 \label{sec:geodesic-loops}
 
-Long-range context preservation 
-during sequential interaction 
-requires tracking how controlled 
-perturbations deform path-dependent 
-structures over time. We formalize 
-this representational drift across 
-a closed loop trajectory $\gamma$ 
-using the Holonomy Drift Tensor $H(\gamma)$ 
-derived in our master framework:
+Long-range context preservation
+requires tracking path-dependent
+representational drift across
+closed interaction loops $\gamma$.
+To align the framework with invariant
+parallel transport rules, the
+Holonomy Drift Tensor $H(\gamma)$
+is formalized using the path-ordered
+exponential of the connection form:
 \[
-H(\gamma) = \oint_{\gamma} 
-\nabla V_{\text{perturb}}
+H(\gamma) = \mathcal{P} \exp 
+\left( \oint_{\gamma} 
+\Gamma^\mu_{\nu \lambda} \, 
+dx^\lambda \right)
 \]
-where $\nabla V_{\text{perturb}}$ represents 
-the covariant derivative of the 
-perturbation vector field inducing 
-deformation on the latent metric.
+where $\Gamma^\mu_{\nu \lambda}$
+denotes the Christoffel symbols
+characterizing the non-Euclidean
+geometry of the cognitive manifold.
 
-The magnitude of the accumulated 
-connection asymmetry along $\gamma$ 
-is strictly bounded by the manifold's 
-local stability scalar $D(x,t)$. 
-If the tension vector induced by 
-recurrent sequence steps violates 
-this threshold, the tracking trajectory 
-breaches the collapse surface boundary:
+The accumulated tensor deflection
+along the loop trajectory must satisfy
+the local stability scalar bounds
+established in our framework:
 \[
-\|V_{\text{perturb}}\| \ge D(x,t)
+\| V_{\text{perturb}} \| < D(x,t)
 \]
-The system regulates this boundary 
-by continuously feeding error tensors 
-back into the 9D radial Laplacian, 
-forcing the localized deformation 
-to remain asymptotically stable 
-and drift-neutral over extended 
-operational horizons.
+If recurrent sequence perturbations
+induce an accumulated tension vector
+that breaches this threshold, the
+state trajectory crosses the collapse
+surface boundary $\Sigma$. The runtime
+engine detects this deviation via
+the structural indicators in the
+interceptor module, executing an
+immediate memory stabilization loop.
