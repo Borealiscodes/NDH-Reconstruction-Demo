@@ -1,0 +1,39 @@
+\section{Geodesic Interaction Loops}
+\label{sec:geodesic-loops}
+
+Long-range context preservation 
+during sequential interaction 
+requires tracking how controlled 
+perturbations deform path-dependent 
+structures over time. We formalize 
+this representational drift across 
+a closed loop trajectory $\gamma$ 
+using the Holonomy Drift Tensor $H(\gamma)$ 
+derived in our master framework:
+\[
+H(\gamma) = \oint_{\gamma} 
+\nabla V_{\text{perturb}}
+\]
+where $\nabla V_{\text{perturb}}$ represents 
+the covariant derivative of the 
+perturbation vector field inducing 
+deformation on the latent metric.
+
+The magnitude of the accumulated 
+connection asymmetry along $\gamma$ 
+is strictly bounded by the manifold's 
+local stability scalar $D(x,t)$. 
+If the tension vector induced by 
+recurrent sequence steps violates 
+this threshold, the tracking trajectory 
+breaches the collapse surface boundary:
+\[
+\|V_{\text{perturb}}\| \ge D(x,t)
+\]
+The system regulates this boundary 
+by continuously feeding error tensors 
+back into the 9D radial Laplacian, 
+forcing the localized deformation 
+to remain asymptotically stable 
+and drift-neutral over extended 
+operational horizons.
