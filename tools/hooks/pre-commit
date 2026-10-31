@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# -----------------------------------------------------------------------------
+# NDH-Reconstruction-Demo: Git Pre-Commit Stabilization Hook
+# Enforces environment boundaries and guards against context/cache leakage.
+# -----------------------------------------------------------------------------
+
+echo "📡 [HOOK INITIALIZE] Auditing staging environment invariants..."
+
+# 1. Block local text-editor cache and swap leakages
+if git diff --cached --name-only | grep -E '\.(bak|tmp|swp|tmp_.*)$'; then
+    echo "❌ [HOOK ABORT] Volatile temporary or swap files detected in staging area."
+    echo "   Ensure local editor memory states are cleaned before signing off."
+    exit 1
+fi
+
+# 2. Prevent compilation artifacts from leaking past gitignore bounds
+if git diff --cached --name-only | grep -E '\.(pyc|pyo|pyd|v.d|vo|glob|aux|log|toc|out)$'; then
+    echo "❌ [HOOK ABORT] Compiled binaries or auxiliary TeX metadata detected."
+    echo "   Purge runtime cache directories to preserve clean lineage tracking."
+    exit 1
+fi
+
+# 3. Verify Python formatting compliance if staged
+STAGED_PYTHON=$(git diff --cached --name-only | grep -E '\.py$')
+if [ -n "$STAGED_PYTHON" ]; then
+    echo "🐍 Reviewing Python files via static formatting rules..."
+    if ! command -v black >/dev/null 2>&1; then
+        echo "⚠️  [WARNING] 'black' formatting utility not found in path. Skipping check."
+    else
+        black --check --line-length=100 src/ tests/ || {
+            echo "❌ [HOOK ABORT] Python scripts violate style invariants. Run 'black .' first."
+            exit 1
+        }
+    fi
+fi
+
+echo "✅ [HOOK SUCCESS] Environment is drift-neutral. Proceeding to cryptographic sign-off."
+exit 0
