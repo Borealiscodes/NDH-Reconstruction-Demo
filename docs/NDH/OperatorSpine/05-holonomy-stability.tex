@@ -1,0 +1,38 @@
+\section{Holonomy Stability}
+\label{sec:holonomy-stability}
+
+Long-term runtime integrity
+requires strict bounds to prevent
+the decay or chaotic divergence
+of parallel transport loops.
+
+We enforce a strict supremum
+bound on the global holonomy
+clamp operator across all closed
+interaction sequences:
+\[
+\sup_{\gamma_k \in \mathcal{M}}
+\left\| \oint_{\gamma_k}
+\mathcal{H}(\mathbf{z}) \,
+d\gamma_k \right\| \le \epsilon
+\]
+where $\epsilon > 0$ defines
+the explicit topological tolerance
+preventing contextual drift.
+
+Asymptotic convergence toward
+drift-neutral equilibrium is
+governed by continuous radial
+dissipation via the 9D Laplacian:
+\[
+\lim_{t \to \infty}
+\left\| \frac{d\mathbf{z}}{dt}
+\right\| = 0
+\]
+If a trajectory approaches
+a collapse surface boundary
+where $\det(\nabla^2 \mathbf{z}) \le 0$,
+the clamp tension non-linearly
+scales to reflect the state vector
+back into the open, positive-definite
+interior of the manifold.
