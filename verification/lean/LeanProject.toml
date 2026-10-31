@@ -1,0 +1,10 @@
+[package]
+name = "ndh_invariants"
+version = "0.1.0"
+lean_version = "leanprover/lean4:v4.11.0"
+
+[dependencies]
+mathlib = { git = "https://github.com", rev = "v4.11.0" }
+
+[path_mappings]
+src = "src"
