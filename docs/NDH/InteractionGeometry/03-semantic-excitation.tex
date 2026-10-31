@@ -5,40 +5,34 @@ Semantic excitation models the
 dynamic update of the state vector
 $\mathbf{z}(t)$ and the metric tensor
 $g_{ij}$ under an incoming stimulus
-perturbation vector field $V_{\text{perturb}}$.
-Rather than allowing unconstrained
-linear shifts, the deformation of the
-latent metric over time is governed by the
-forced-Ricci-flow-inspired evolution law:
+perturbation vector field $V \in \Gamma(TM)$.
+Because the metric tensor is symmetric,
+the deformation of the latent space
+over time must be governed by a
+symmetrized, forced-Ricci-flow law:
 \[
 \frac{\partial g_{ij}}{\partial t}
 = -2 R_{ij}
-+ \alpha \nabla_i V_{\text{perturb},j}
++ \alpha \left( \nabla_i V_j 
++ \nabla_j V_i \right)
 + \beta F_{ij}
 \]
 where $R_{ij}$ is the Ricci curvature
-tensor, $F_{ij}$ is an external forcing
-tensor, and $\alpha, \beta$ denote the
-systemic susceptibility coefficients.
+tensor, $F_{ij}$ is the external forcing
+tensor, and $\nabla$ denotes covariant 
+compatibility along the active domain.
 
-To ensure that structural deformation
-remains strictly controlled and does not
-induce representational failure, the magnitude
-of the perturbation field must be strictly
-bounded by the manifold's local stability
-scalar $D(x,t)$:
+To maintain structural stability, the
+dynamic response of the metric to
+this field is explicitly tracked via the
+Susceptibility Tensor variation $S_{ij}(V)$:
 \[
-\|V_{\text{perturb}}\| < D(x,t)
+S_{ij}(V) = \lim_{\epsilon \to 0} 
+\frac{g_{ij}(V + \epsilon \delta V) 
+- g_{ij}(V)}{\epsilon}
 \]
-The dynamic response of the metric
-with respect to the perturbation field
-is explicitly quantified by the
-Susceptibility Tensor $S_{ij}$:
-\[
-S_{ij} = \frac{\partial g_{ij}}
-{\partial V_{\text{perturb}}}
-\]
-This operational profile ensures that
-dynamic energy transitions preserve
-structural continuity and remain bounded
-away from the collapse surface.
+This formulation ensures that
+high-energy state transitions preserve
+algebraic composability, matching the
+strict Jacobi identities required by the
+underlying operator fields.
