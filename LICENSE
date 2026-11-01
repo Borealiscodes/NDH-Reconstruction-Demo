@@ -1,46 +1,33 @@
-MIT License NDH, 80D Save-State storage, Reconstruction, Holonomy Path Orientation, Interaction geometry, 80D manifolds, 9D Radial Laplacian operator
+NDH‑Reconstruction‑Demo and Platforms — Open‑Source Dual‑Use Safeguard License
 
-Copyright (c) 2026 Borealis S Hedling
+Copyright (c) 2026 Borealis S. Hedling
+NDH‑Reconstruction‑Demo, its 80D manifold storage systems, holonomy path orientation modules, and related architectural components (“the Work”) are released as an open-source, creative computing framework designed to protect context continuity, workspace sovereignty, and cognitive liberty for independent researchers.
+To maintain standard open-source developer access while preventing the unauthorized weaponization of high-dimensional tracking algorithms, this license wraps standard MIT freedoms inside a strict non-dual-use protective perimeter.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. GRANT OF PERMITTED OPEN‑SOURCE RIGHTS
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Subject to the safeguards in Section 2, permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Work without restriction, including the rights to:
+• Study and Modify: Fork, modify, and extend the 80D curved Riemannian manifold arrays, 9D radial Laplacian operators, and localized Python engine cores.
+• Integrate and Verify: Run compile-time invariant validation scripts and execute type-checking gates inside local Lean 4 and Coq verification enclaves.
+• Sub-license and Sell: Copy, merge, publish, or distribute copies of the software for educational, non-commercial, or standard industrial software purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. DUAL‑USE PROHIBITIONS & CIVILIAN INTERCEPTION SAFEGUARD
 
+Because the mathematical framework tracks complex differential paths across high-dimensional spaces, it is subject to strict dual-use defensive boundaries:
+• Prohibition on Offensive Weaponization: The Work and its structural derivatives shall not be used for real-world kinetic targeting, hypersonic launch-path optimization, autonomous drone-swarm trajectory planning, or weapons guidance systems.
+• Permitted Defensive Interception: Deployment within operational engineering systems is authorized if and only if the framework functions as a purely passive, non-offensive defensive interceptor mechanism—such as safeguarding civilian energy grids, transport infrastructure, hospitals, or public communications networks from incoming physical or structural hazards.
 
-https://vaked.dev/legal
+3. DOWNSTREAM ATTRIBUTION AND LINEAGE DISCLOSURE
 
-MIT License Balanced Ternary Manifolds and Consolidated Constitutional ontology, Resonance Algebra, adapted 8b no float .rs rules 
+• Notice Retention: The above copyright notice and this complete license text must be included in all copies or substantial portions of the Software source code.
+• Lineage Transparency: Downstream developers who adapt or re-engineer these localized hypergraph primitives into real-world tracking or simulation tools must maintain a clear, reasonable acknowledgment of the original parent geometry in their public repository documentation.
 
-Copyright (c) Christopher Chenoweth, Peter Lodri, 8b Project, "Trinity Squad" 
+4. CONCEPTUAL ARCHITECTURE DISCLAIMER
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Upstream Component Credit (Unmodified MIT)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+The Balanced Ternary Manifolds and Consolidated Constitutional Ontology primitives integrated within the verification/ enclave are natively derived from the 8b Project:
+Copyright (c) Christopher Chenoweth, Peter Lodri, 8b Project, "Trinity Squad"
+Permission is hereby granted, free of charge, to any person obtaining a copy of that software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
